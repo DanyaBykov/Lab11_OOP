@@ -10,6 +10,10 @@ public class MailBox {
         infos.add(mailInfo);
     }
 
+    public List<MailInfo> getMailInfos() {
+        return infos;
+    }
+
     public void sendAll() {
         MailSender mailSender = new MailSender();
         for (MailInfo info : infos) {
